@@ -1,10 +1,8 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
-runs:
-  using: 'node12'
-  main: 'dist/index.js'
+name: 'SCV release tool based on git tags'
+description: 'This tool generates automatic release notes based on git tags'
+author: 'SCV Consultants'
+runs: using: 'node12'
+outputs: 
+  release-url:
+    description: "The URL of the github release that was drafted"
+main: 'dist/index.js'
